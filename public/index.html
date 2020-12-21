@@ -6,7 +6,60 @@
     <script type="module" src="./assets/js/main.js"></script>
     <title>Tic Tac Toe</title>
 </head>
-<body>
-    
+<body class="flex items-center justify-center w-full h-full bg-background">
+
+    <div id="board" class=" grid grid-cols-3 h-96 w-96 transition duration-500 transform -rotate-45 skew-x-12 skew-y-12 shadow-board bg-board-top 
+        
+        before:empty-content 
+        before:w-5
+        before:h-full 
+        before:bg-board-edgeDark 
+        before:absolute 
+        before:-left-5 
+        before:top-2.5 
+        before:transform 
+        before:-skew-y-45
+
+        after:empty-content 
+        after:h-5 
+        after:w-full 
+        after:bg-board-edgeLight 
+        after:absolute 
+        after:-left-2.5 
+        after:-bottom-5 
+        after:transform 
+        after:-skew-x-45
+
+        hover:shadow-boardHover
+        hover:-translate-y-2.5">
+
+
+        <div data-cell class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+        <div data-cell
+            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+        <div data-cell
+            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+        <div data-cell
+            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+        <div data-cell
+            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+        <div data-cell
+            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+        <div data-cell
+            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+        <div data-cell
+            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+        <div data-cell class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        </div>
+    </div>
+
 </body>
 </html>

@@ -3,61 +3,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <script src="https://kit.fontawesome.com/92b88ff8f4.js" crossorigin="anonymous"></script>
     <script type="module" src="./assets/js/main.js"></script>
     <title>Tic Tac Toe</title>
 </head>
 <body class="flex items-center justify-center w-full h-full bg-background">
 
-    <div id="board" class=" grid grid-cols-3 h-96 w-96 transition duration-500 transform -rotate-45 skew-x-12 skew-y-12 shadow-board bg-board-top 
+    <!-- <div class="absolute z-50 flex items-center justify-center w-full h-full bg-red-900 opacity-75 inset filter filter-contrast-25">
+        <button>Start Game</button>
+    </div> -->
+    
+    <div id="board" class="grid grid-cols-3 h-96 w-96 transition duration-500 transform -rotate-45 skew-x-12 skew-y-12 shadow-board bg-board-top
         
         before:empty-content 
-        before:w-5
+        before:w-4
         before:h-full 
         before:bg-board-edgeDark 
         before:absolute 
-        before:-left-5 
-        before:top-2.5 
+        before:-left-4 
+        before:top-2 
         before:transform 
         before:-skew-y-45
 
         after:empty-content 
-        after:h-5 
+        after:h-4 
         after:w-full 
         after:bg-board-edgeLight 
         after:absolute 
-        after:-left-2.5 
-        after:-bottom-5 
+        after:-left-2 
+        after:-bottom-4 
         after:transform 
         after:-skew-x-45
 
         hover:shadow-boardHover
         hover:-translate-y-2.5">
 
+        
+        <div class="absolute flex items-center justify-center w-96 h-96">
+            <img src="assets/media/grid.svg" class="w-5/6 fill-current h-5/6">
+        </div>
 
-        <div data-cell class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer fas fa-times text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
-        <div data-cell
-            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer fas fa-times text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
-        <div data-cell
-            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer far fa-circle text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
-        <div data-cell
-            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer fas fa-times text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
-        <div data-cell
-            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer far fa-circle text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
-        <div data-cell
-            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer fas fa-times text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
-        <div data-cell
-            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer far fa-circle text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
-        <div data-cell
-            class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer fas fa-times text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
-        <div data-cell class="w-full h-full duration-500 hover:bg-white hover:opacity-10 transform transition hover:translate-x-2.5 hover:-translate-y-2.5 hover:shadow-layer">
+        <div data-cell class="flex items-center justify-center layer">
+            <i class="text-transparent transition duration-500 transform cursor-pointer far fa-circle text-8xl hover:text-black hover:text-opacity-50 shadow-layer"></i>
         </div>
     </div>
 

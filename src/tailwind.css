@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .layer {
-        @apply w-32 h-32 transition duration-500 cursor-pointer transform hover:bg-white hover:bg-opacity-30 hover:shadow-layer hover:translate-x-2.5 hover:-translate-y-2.5;
+@layer utilities {
+    .flex-center {
+        @apply flex items-center justify-center;
     }
-    .layer:hover:before {
-        @apply absolute w-2 h-full transform bg-white opacity-30 empty-content -left-2 top-1 -skew-y-45 shadow-layer;
-    }
-    .layer:hover:after {
-        @apply absolute w-full h-2 transform bg-white opacity-30 empty-content -left-1 -bottom-2 -skew-x-45 shadow-layer;
-    }
-
 };
+
+@layer components {
+    .cell-hover-layer {
+        @apply flex flex-center w-32 h-32 hover:bg-white hover:bg-opacity-30 transform hover:translate-x-2.5 hover:-translate-y-2.5 transition duration-500 shadow-layer self-auto
+                text-transparent cursor-pointer text-8xl hover:text-black hover:text-opacity-60;
+    }
+    .cell-hover-layer:hover:before {
+        @apply absolute w-2 h-full transform bg-white bg-opacity-40 empty-content -left-2 top-1 -skew-y-45 shadow-layer;
+    }
+    .cell-hover-layer:hover:after {
+        @apply absolute w-full h-2 transform bg-white bg-opacity-40 empty-content -left-1 -bottom-2 -skew-x-45 shadow-layer;
+    }
+};
+
